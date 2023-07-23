@@ -38,7 +38,7 @@ function App() {
           setCurrentPage={setCurrentPage}
         />
       </Header>
-      <main className="main-section">
+      <main>
         <currentPage.component />
       </main>
       <Footer />
