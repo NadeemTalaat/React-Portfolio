@@ -1,24 +1,31 @@
 import React, { useState } from "react";
 import Header from "./Components/Header/Header";
 import Nav from "./Components/Navigation/Nav";
-import Page from "./Components/Page";
 import Footer from "./Components/Footer/Footer";
+import AboutMe from "./Components/Pages/AboutMe";
+import Portfolio from "./Components/Pages/Portfolio";
+import ContactMe from "./Components/Pages/ContactMe";
+import Resume from "./Components/Pages/Resume";
 
 function App() {
-  const [pages] = useState([
+  const pages = [
     {
-      name: "about-me",
+      name: "About Me",
+      component: AboutMe,
     },
     {
-      name: "portfolio",
+      name: "Portfolio",
+      component: Portfolio,
     },
     {
-      name: "contact",
+      name: "Contact Me",
+      component: ContactMe,
     },
     {
-      name: "resume",
+      name: "Resume",
+      component: Resume,
     },
-  ]);
+  ];
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
@@ -32,7 +39,8 @@ function App() {
         />
       </Header>
       <main>
-        <Page currentPage={currentPage} />
+        {currentPage.name}
+        <currentPage.component />
       </main>
       <Footer />
     </div>
