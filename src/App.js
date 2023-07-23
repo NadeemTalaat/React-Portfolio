@@ -39,7 +39,6 @@ function App() {
         />
       </Header>
       <main>
-        {currentPage.name}
         <currentPage.component />
       </main>
       <Footer />

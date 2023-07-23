@@ -1,6 +1,8 @@
+import "./nav.css";
+
 function Nav(props) {
   return (
-    <nav>
+    <nav className="Nav">
       {props.pages.map((page) => {
         return (
           <button key={page.name} onClick={() => props.setCurrentPage(page)}>
