@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Header from "./Components/Header";
-import Nav from "./Components/Navigation";
+import Header from "./Components/Header/Header";
+import Nav from "./Components/Navigation/Nav";
 import Page from "./Components/Page";
-import Footer from "./Components/Footer";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [pages] = useState([
@@ -23,7 +23,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <body>
+    <div>
       <Header>
         <Nav
           pages={pages}
@@ -31,13 +31,11 @@ function App() {
           setCurrentPage={setCurrentPage}
         />
       </Header>
-
       <main>
         <Page currentPage={currentPage} />
       </main>
-
       <Footer />
-    </body>
+    </div>
   );
 }
 
