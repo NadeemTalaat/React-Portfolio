@@ -1,0 +1,19 @@
+.Nav {
+  display: flex;
+}
+
+.Nav .navbar-button {
+  padding: 10px 20px;
+  margin: 0px 20px;
+  color: rgb(137, 135, 135);
+  border: black solid 2px;
+  box-sizing: border-box;
+}
+
+.Nav .navbar-button:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  background-color: grey;
+  box-sizing: border-box;
+}

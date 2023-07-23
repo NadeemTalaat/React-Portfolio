@@ -5,9 +5,13 @@ function Nav(props) {
     <nav className="Nav">
       {props.pages.map((page) => {
         return (
-          <button key={page.name} onClick={() => props.setCurrentPage(page)}>
+          <div
+            className="navbar-button"
+            key={page.name}
+            onClick={() => props.setCurrentPage(page)}
+          >
             {page.name}
-          </button>
+          </div>
         );
       })}
     </nav>
