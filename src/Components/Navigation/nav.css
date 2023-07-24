@@ -1,10 +1,12 @@
 .Nav {
   display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 .Nav .navbar-button {
   padding: 10px 20px;
-  margin: 0px 20px;
+  margin: auto 20px;
   color: rgb(137, 135, 135);
   border: black solid 2px;
   box-sizing: border-box;
@@ -12,8 +14,15 @@
 
 .Nav .navbar-button:hover {
   cursor: pointer;
-  border-radius: 5px;
   color: white;
-  background-color: grey;
+  color: white;
+  background: linear-gradient(0deg, black, 20%, rgb(107, 98, 98));
+  border-radius: 15px;
   box-sizing: border-box;
+}
+
+.Nav .navbar-button.active {
+  color: white;
+  background: linear-gradient(0deg, black, 20%, rgb(107, 98, 98));
+  border-radius: 15px;
 }

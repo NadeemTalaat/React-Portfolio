@@ -6,7 +6,9 @@ function Nav(props) {
       {props.pages.map((page) => {
         return (
           <div
-            className="navbar-button"
+            className={`navbar-button ${
+              props.currentPage.name === page.name ? "active" : ""
+            }`}
             key={page.name}
             onClick={() => props.setCurrentPage(page)}
           >
