@@ -5,14 +5,16 @@ function AboutMe() {
     <Layout>
       <h2>About Me</h2>
       <section className="content">
-        <h4>Overview</h4>
+        <h3>
+          <strong>Overview</strong>
+        </h3>
         <p>
           👋🏽 Hi, I'm Nadeem, a recent Mechanical Engineering graduate from
           McMaster University. I am hoping to transition into the software
           industry. I enjoy front-end development!
         </p>
 
-        <h4>Education</h4>
+        <h3>Education</h3>
         <ul>
           <li>
             B.Eng (Co-op) in Mechanical Engineering at McMaster University
@@ -27,7 +29,7 @@ function AboutMe() {
           </li>
         </ul>
 
-        <h4>Interests/Hobbies</h4>
+        <h3>Interests/Hobbies</h3>
         <ul>
           <li>I love to ski! ⛷️</li>
           <li>I enjoy playing video games with my friends! 🎮</li>

@@ -1,28 +1,25 @@
 .Nav {
   display: flex;
   height: 100%;
-  align-items: center;
 }
 
 .Nav .navbar-button {
+  display: flex;
+  align-items: center;
   padding: 10px 20px;
-  margin: auto 20px;
+  margin: 0px 20px;
   color: rgb(137, 135, 135);
   border: black solid 2px;
-  box-sizing: border-box;
 }
 
 .Nav .navbar-button:hover {
   cursor: pointer;
   color: white;
   color: white;
-  background: linear-gradient(0deg, black, 20%, rgb(107, 98, 98));
-  border-radius: 15px;
-  box-sizing: border-box;
+  border-bottom: white 5px solid;
 }
 
 .Nav .navbar-button.active {
   color: white;
-  background: linear-gradient(0deg, black, 20%, rgb(107, 98, 98));
-  border-radius: 15px;
+  border-bottom: white 5px solid;
 }

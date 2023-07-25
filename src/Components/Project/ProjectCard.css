@@ -1,8 +1,8 @@
 
 .ProjectCard {
   box-sizing: border-box;
-  margin: 20px 40px;
-  width: 40%;
+  margin: 20px 20px;
+  width: 28%;
   cursor: pointer;
   filter: brightness(60%);
   transition: filter 0.5s ease;
@@ -11,9 +11,9 @@
 .ProjectCard .card-img-overlay {
   width: fit-content;
   height: fit-content;
-  background-color: rgb(125, 156, 162);
+  background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-  margin: 15px;
+  margin: 15px; 
 }
 
 .ProjectCard .card-img-top {

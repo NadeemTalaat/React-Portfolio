@@ -1,7 +1,7 @@
 import "./layout.css";
 
-function Layout(props) {
-  return <div className="Layout">{props.children}</div>;
+function Layout({ children }) {
+  return <div className="Layout">{children}</div>;
 }
 
 export default Layout;

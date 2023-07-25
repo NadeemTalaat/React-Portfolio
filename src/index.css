@@ -2,4 +2,13 @@ body {
   background-color: grey;
   background-image: url('./assets/images/banner.jpeg');
   background-size: cover;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body h2 {
+  border-bottom:3px black solid;
+}
+
+body h3 {
+  font-weight: bolder;
 }
