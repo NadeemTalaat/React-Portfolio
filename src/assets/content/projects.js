@@ -51,7 +51,7 @@ const projects = [
     description: "JavaScript, API",
     id: 6,
     image: image6,
-    repo: "https://https://github.com/NadeemTalaat/Weather-Dashboard.com/NadeemTalaat/Text-Editor-PWA",
+    repo: "https://github.com/NadeemTalaat/Weather-Dashboard",
     deployment: "https://nadeemtalaat.github.io/Weather-Dashboard/",
   },
 ];
