@@ -45,7 +45,7 @@ function Form() {
 
   return (
     <div className="container mt-5">
-      <form className="d-flex flex-column">
+      <form className="form d-flex flex-column">
         <div className="form-group mb-2">
           <label htmlFor="name">Name:</label>
           <input
