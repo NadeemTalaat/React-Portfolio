@@ -6,7 +6,7 @@ function Resume() {
   return (
     <Layout>
       <h2>Resume</h2>
-      <a className="resume-link" href={sampleResume} target="_blank">
+      <a className="resume-link" href={sampleResume} target="_blank" download>
         Download my resume here!
       </a>
       <h4 className="mt-4">Proficiencies</h4>
