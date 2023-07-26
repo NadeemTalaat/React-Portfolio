@@ -7,7 +7,7 @@ function Portfolio() {
     <Layout>
       <h2>Portfolio</h2>
 
-      <div className="d-flex flex-wrap justify-content-center">
+      <div className="d-flex flex-wrap justify-content-center project-list">
         {Projects.map((project) => {
           return <ProjectCard project={project} key={project.id} />;
         })}

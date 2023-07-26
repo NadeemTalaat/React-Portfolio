@@ -2,7 +2,7 @@ import "./nav.css";
 
 function Nav(props) {
   return (
-    <nav className="Nav">
+    <nav className="Nav d-flex flex-column flex-md-row">
       {props.pages.map((page) => {
         return (
           <div
