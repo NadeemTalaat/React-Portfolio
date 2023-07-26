@@ -6,3 +6,7 @@
 .Layout h2 {
   text-align: center;
 }
+
+.Layout h4 {
+  font-weight: bolder;
+}

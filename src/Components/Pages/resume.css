@@ -1,0 +1,19 @@
+.resume-link {
+  display: block;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 30px;
+}
+
+.resume-link:hover {
+
+  color: rgb(255, 255, 255);
+  background: rgb(83, 80, 80);
+  width: fit-content;
+  padding: 5px 20px;
+}
