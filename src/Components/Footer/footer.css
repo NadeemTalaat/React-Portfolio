@@ -19,4 +19,11 @@
 
 .Footer div a{
   color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.Footer div a:hover {
+  color: rgb(0, 212, 240);
+  /* font-weight: bold; */
 }
