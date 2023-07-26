@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Form.css";
+import "./form.css";
 
 function Form() {
   const [formData, setFormData] = useState({
@@ -17,12 +17,24 @@ function Form() {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
+  const isValidEmail = (text) => {
+    const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+    return emailRegex.test(text);
+  };
+
   const handleBlur = (event) => {
     const { name, value } = event.target;
 
     if (value.trim() === "") {
       setErrorMessage(`Please enter your ${name}!`);
 
+      setShowNotification(true);
+
+      setTimeout(() => {
+        setShowNotification(false);
+      }, 7500);
+    } else if (name == "email" && !isValidEmail(value)) {
+      setErrorMessage("Please enter a valid email!");
       setShowNotification(true);
 
       setTimeout(() => {
@@ -35,7 +47,7 @@ function Form() {
     <div className="container mt-5">
       <form className="d-flex flex-column">
         <div className="form-group mb-2">
-          <label for="name">Name:</label>
+          <label htmlFor="name">Name:</label>
           <input
             type="text"
             className="form-control"
@@ -49,7 +61,7 @@ function Form() {
           />
         </div>
         <div className="form-group mb-2">
-          <label for="email">Email:</label>
+          <label htmlFor="email">Email:</label>
           <input
             type="email"
             className="form-control"
@@ -63,7 +75,7 @@ function Form() {
           />
         </div>
         <div className="form-group">
-          <label for="message">Message:</label>
+          <label htmlFor="message">Message:</label>
           <textarea
             className="form-control"
             id="message"
